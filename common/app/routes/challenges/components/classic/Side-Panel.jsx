@@ -8,6 +8,7 @@ import { Col, Row } from 'react-bootstrap';
 import TestSuite from '../Test-Suite.jsx';
 import Output from '../Output.jsx';
 import ToolPanel from './Tool-Panel.jsx';
+import HintButton from './Hint-Button.jsx';
 import { challengeSelector } from '../../redux/selectors';
 import {
   openBugModal,
@@ -157,6 +158,7 @@ export class SidePanel extends PureComponent {
           unlockUntrustedCode={ unlockUntrustedCode }
           updateHint={ updateHint }
         />
+        <HintButton />
         <Output
           defaultOutput={
 `/**
